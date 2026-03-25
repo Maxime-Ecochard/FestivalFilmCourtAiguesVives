@@ -29,9 +29,32 @@
                 </button>
                 <ul class="nav-links" id="nav-list">
                     <li><a href="#accueil" class="active">Accueil</a></li>
-                    <li><a href="#programme">Programme</a></li>
+                    <li class="nav-item">
+                        <a href="#programme">Le festival ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="javascript:void(0)" onclick="openModal('edition')">L'édition</a></li>
+                            <li><a href="javascript:void(0)" onclick="openModal('lieu')">Le lieu</a></li>
+                            <li><a href="javascript:void(0)" onclick="openModal('tarifs')">Tarifs, horaires et billetterie</a></li>
+                            <li><a href="javascript:void(0)" onclick="openModal('programme')">Le programme à venir</a></li>
+                            <li><a href="#fete-court-metrage">La fête du court métrage</a></li>
+                            <li><a href="javascript:void(0)" onclick="openModal('palmares')">Le palmarès des très courts</a></li>
+                            <li><a href="javascript:void(0)" onclick="openModal('musiciens')">Les musiciens</a></li>
+                            <li><a href="javascript:void(0)" onclick="openModal('saveurs')">Les saveurs</a></li>
+                            <li><a href="javascript:void(0)" onclick="openModal('plan')">Plan d'accès</a></li>
+                            <li><a href="javascript:void(0)" onclick="openModal('education')">Education à l'image</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">L'association ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="javascript:void(0)" onclick="openModal('objectifs')">Objectifs et actions</a></li>
+                            <li><a href="javascript:void(0)" onclick="openModal('conseil')">Conseil d'administration</a></li>
+                            <li><a href="javascript:void(0)" onclick="openModal('benevoles')">Les bénévoles</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Professionnels</a></li>
+                    <li><a href="#">Archives</a></li>
                     <li><a href="#galerie">Galerie</a></li>
-                    <li><a href="#infos">Infos Pratiques</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -70,8 +93,8 @@
                     <a href="#infos" class="btn btn-outline" style="margin-top: 1rem;">Infos Pratiques</a>
                 </div>
                 <div class="event-poster">
-                    <!-- Placeholder using a cinematic image, replacing the PDF for web preview -->
-                    <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=800&auto=format&fit=crop" alt="Affiche La Fête du Court Métrage" class="poster-img">
+                    <!-- Affiche du prochain événement -->
+                    <img src="affiche-fete-court-2026-web.png" alt="Affiche La Fête du Court Métrage" class="poster-img">
                 </div>
             </div>
         </div>
@@ -101,6 +124,74 @@
                 <h3 class="text-accent" style="margin-bottom: 1rem;">Soutenez le Festival</h3>
                 <p style="margin-bottom: 1rem;">Reconnu d'intérêt général, le festival est éligible au mécénat (réduction d'impôt de 66% pour les particuliers, 60% pour les entreprises).</p>
                 <p>Associez votre image à un événement culturel majeur avec une visibilité sur nos supports de communication et sur grand écran.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Reviews Section -->
+    <section class="reviews-section">
+        <div class="container">
+            <div class="reviews-header">
+                <h2 class="section-title" style="margin-bottom: 0;">Ce que disent nos spectateurs</h2>
+                <a href="https://www.google.com/search?sca_esv=3902f2b246b46b37&rlz=1C5CHFA_enFR716FR716&sxsrf=ANbL-n7HFSsOIU19vWDLjtrbX3ds9Ym3zA:1774475305380&q=Festival+du+Film+Court+d%27Aigues-Vives&si=AL3DRZGNtcdgKOqVhotcr-UG2kkYpwR2WO4qu3O00NmpwBmLnSy9WfTTLbrImwyHC4l7WjiqSmxfD1zLE5vMZMVnk0pVe0HPM4EGVdpsDEAq16FRYCTql8GMGzIiKBSNjMlmwh_hl3HN3oLwMVeqV-580P9HACBksw%3D%3D&sa=X&ved=2ahUKEwjNr_XRg7yTAxVpUaQEHTc8Ck4Q_coHegQIKxAB&biw=1920&bih=856&dpr=1" target="_blank" class="btn btn-primary">Laissez votre avis sur Google Maps</a>
+            </div>
+            
+            <div class="carrousel-container" role="region" aria-label="Avis des spectateurs">
+                <div class="review-track">
+                    <!-- Original 5 Reviews -->
+                    <div class="review-card glass-panel">
+                        <div class="stars">★★★★★</div>
+                        <p>"Un festival incroyable aux arènes sous les étoiles. L'ambiance avec les musiciens et les bougies est magique. À ne pas manquer !"</p>
+                        <span class="review-author">- Marie L.</span>
+                    </div>
+                    <div class="review-card glass-panel">
+                        <div class="stars">★★★★★</div>
+                        <p>"Superbe sélection de courts métrages. L'organisation est au top grâce aux bénévoles. La restauration locale est délicieuse."</p>
+                        <span class="review-author">- Julien P.</span>
+                    </div>
+                    <div class="review-card glass-panel">
+                        <div class="stars">★★★★☆</div>
+                        <p>"Première fois cette année, j'ai été émerveillée par la qualité des films et l'accueil chaleureux. Très bon cidre !"</p>
+                        <span class="review-author">- Sophie V.</span>
+                    </div>
+                    <div class="review-card glass-panel">
+                        <div class="stars">★★★★★</div>
+                        <p>"Le rendez-vous incontournable de l'été ! Les enfants adorent et c'est un excellent moyen de découvrir de nouveaux talents."</p>
+                        <span class="review-author">- Thomas D.</span>
+                    </div>
+                    <div class="review-card glass-panel">
+                        <div class="stars">★★★★★</div>
+                        <p>"Une perle cinématographique. Les nuits étoilées d'Aigues-Vives n'ont jamais été aussi belles que pendant ce festival."</p>
+                        <span class="review-author">- Emma G.</span>
+                    </div>
+                    
+                    <!-- Duplicated Reviews for Infinite Scroll -->
+                    <div class="review-card glass-panel" aria-hidden="true">
+                        <div class="stars">★★★★★</div>
+                        <p>"Un festival incroyable aux arènes sous les étoiles. L'ambiance avec les musiciens et les bougies est magique. À ne pas manquer !"</p>
+                        <span class="review-author">- Marie L.</span>
+                    </div>
+                    <div class="review-card glass-panel" aria-hidden="true">
+                        <div class="stars">★★★★★</div>
+                        <p>"Superbe sélection de courts métrages. L'organisation est au top grâce aux bénévoles. La restauration locale est délicieuse."</p>
+                        <span class="review-author">- Julien P.</span>
+                    </div>
+                    <div class="review-card glass-panel" aria-hidden="true">
+                        <div class="stars">★★★★☆</div>
+                        <p>"Première fois cette année, j'ai été émerveillée par la qualité des films et l'accueil chaleureux. Très bon cidre !"</p>
+                        <span class="review-author">- Sophie V.</span>
+                    </div>
+                    <div class="review-card glass-panel" aria-hidden="true">
+                        <div class="stars">★★★★★</div>
+                        <p>"Le rendez-vous incontournable de l'été ! Les enfants adorent et c'est un excellent moyen de découvrir de nouveaux talents."</p>
+                        <span class="review-author">- Thomas D.</span>
+                    </div>
+                    <div class="review-card glass-panel" aria-hidden="true">
+                        <div class="stars">★★★★★</div>
+                        <p>"Une perle cinématographique. Les nuits étoilées d'Aigues-Vives n'ont jamais été aussi belles que pendant ce festival."</p>
+                        <span class="review-author">- Emma G.</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -141,8 +232,136 @@
         <p class="copyright">© 2026 Ciné Aigues-Vives - Festival de Court Métrage. Tous droits réservés.</p>
     </footer>
 
+    <!-- Content Modal -->
+    <div id="content-modal" class="modal-overlay">
+        <div class="modal-content glass-panel">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <div id="modal-body" class="modal-body">
+                <!-- Content injected by JS -->
+            </div>
+        </div>
+    </div>
+
     <!-- Scripts -->
     <script>
+        // Content Data from cine-aiguesvives.fr
+        const contentData = {
+            'edition': {
+                title: "L'édition 2025",
+                body: `<h3>Suspense dans les arènes !</h3>
+                       <p>Le 27e festival, les 25 et 26 juillet 2025, sera dédié au polar sous toutes ses formes : thriller, énigme, policier, détective.</p>
+                       <p>Chaque soir, un programme différent de films courts sélectionnés avec exigence sera projeté. Comme chaque année, l'événement sera agrémenté de repas, de tapas et de musiciens en direct.</p>`
+            },
+            'lieu': {
+                title: "Le Lieu",
+                body: `<h3>Les arènes d'Aigues-Vives</h3>
+                       <p>Un cadre unique et convivial, niché à l'ombre des platanes séculaires et sur un sol de sable blanc.</p>
+                       <p>Les arènes ne sont pas seulement un lieu de spectacle taurin, mais le cœur battant de la vie culturelle du village, accueillant notre festival annuel sous les étoiles.</p>`
+            },
+            'tarifs': {
+                title: "Tarifs & Billetterie",
+                body: `<h3>Pass & Entrées 2025</h3>
+                       <ul>
+                           <li><strong>Entrée unique (Soirée + Musique) :</strong> 15 €</li>
+                           <li><strong>Pass 2 soirées :</strong> 25 €</li>
+                           <li><strong>Jeunes (12-20 ans) :</strong> 10 € (Pass 2j : 16 €)</li>
+                           <li><strong>Moins de 12 ans :</strong> Gratuit</li>
+                           <li><strong>Tapas :</strong> 4 €</li>
+                       </ul>
+                       <p>La billetterie est disponible directement sur place ou via notre plateforme de réservation en ligne partenaire.</p>`
+            },
+            'palmares': {
+                title: "Le Palmarès",
+                body: `<h3>Archives des Récompenses</h3>
+                       <p>Le festival récompense chaque année l'excellence du format court. Voici les derniers lauréats marquants :</p>
+                       <ul>
+                           <li><strong>Grand Prix du Jury :</strong> "The Magic Diner" (Niclas Larsson, USA)</li>
+                           <li><strong>Prix de l'Originalité :</strong> "Bla Bla Bla" (Alexis Morante, Espagne)</li>
+                           <li><strong>Prix du Public :</strong> "Closet Space"</li>
+                       </ul>`
+            },
+            'musiciens': {
+                title: "Les Musiciens",
+                body: `<h3>Trio Sem’Diem</h3>
+                       <p>Fusion de latin, jazz et groove. Composé de Salvador (guitare), Mathieu (contrebasse) et Anthony (batterie).</p>
+                       <p>Le trio réinvente des standards connus et propose des compositions originales pour accompagner l'ambiance magique des projections en plein air.</p>`
+            },
+            'saveurs': {
+                title: "Les Saveurs",
+                body: `<h3>Convivialité & Gastronomie</h3>
+                       <p>La gastronomie est essentielle au succès du festival. Nos bénévoles préparent pendant trois jours des repas et tapas faits maison.</p>
+                       <p>Dégustez nos vins locaux, bières artisanales et cidres dans une ambiance de partage unique avant les projections.</p>`
+            },
+            'objectifs': {
+                title: "Objectifs & Actions",
+                body: `<h3>Notre Mission</h3>
+                       <p>Dynamiser la vie culturelle du village et rendre le court-métrage accessible au plus grand nombre.</p>
+                       <p>L'association mène également des actions pédagogiques, sensibilisant les scolaires au langage cinématographique tout au long de l'année.</p>`
+            },
+            'conseil': {
+                title: "Conseil d'Administration",
+                body: `<h3>L'équipe de direction</h3>
+                       <ul>
+                           <li><strong>Président :</strong> Dominique Valette</li>
+                           <li><strong>Vice-président :</strong> Hubert Durand</li>
+                           <li><strong>Secrétaire :</strong> Maxime Écochard</li>
+                           <li><strong>Trésorière :</strong> Jennifer Keller</li>
+                       </ul>
+                       <p>Entourés d'une équipe passionnée incluant Claudie Vadagnini, Pascal Steichen, et bien d'autres.</p>`
+            },
+            'benevoles': {
+                title: "Les Bénévoles",
+                body: `<h3>Le cœur du festival</h3>
+                       <p>Plus de 60 bénévoles de tous âges constituent le socle de l'événement.</p>
+                       <p>Du montage des chapiteaux à la préparation des repas, ils assurent l'accueil chaleureux de nos 2500 spectateurs annuels.</p>`
+            },
+            'programme': {
+                title: "Programme 2025",
+                body: `<h3>Calendrier des projections</h3>
+                       <p>Le programme complet et détaillé des deux soirées (vendredi et samedi) sera rendu public officiellement à la fin du mois de juin.</p>
+                       <p>Restez connectés pour découvrir la sélection des films courts qui vous feront vibrer cet été !</p>`
+            },
+            'plan': {
+                title: "Plan d'accès",
+                body: `<h3>Comment venir ?</h3>
+                       <p>Le festival se déroule aux arènes d'Aigues-Vives (30670).</p>
+                       <p>Des parkings gratuits sont fléchés à l'entrée du village pour faciliter votre arrivée.</p>`
+            },
+            'education': {
+                title: "Éducation à l'image",
+                body: `<h3>Sensibilisation des plus jeunes</h3>
+                       <p>L'association intervient régulièrement en milieu scolaire pour faire découvrir les coulisses du cinéma et apprendre aux enfants à décrypter les images.</p>`
+            }
+        };
+
+        function openModal(key) {
+            const data = contentData[key];
+            if (!data) return;
+            
+            const modal = document.getElementById('content-modal');
+            const body = document.getElementById('modal-body');
+            
+            body.innerHTML = `<h2>${data.title}</h2>${data.body}`;
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent scroll
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('content-modal');
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close on escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+        });
+
+        // Close on background click
+        document.getElementById('content-modal').addEventListener('click', (e) => {
+            if (e.target.id === 'content-modal') closeModal();
+        });
+
         document.addEventListener('DOMContentLoaded', () => {
             // Mobile Menu Logic
             const menuToggle = document.getElementById('menu-toggle');
